@@ -1,0 +1,13 @@
+{
+    "name": "russel/simple-to-do",
+    "description": "A Simple PHP To Do App using the Slim Framework",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Russel Villacarlos",
+            "email": "russelvillacarlos@gmail.com"
+        }
+    ],
+    "require": {}
+}
