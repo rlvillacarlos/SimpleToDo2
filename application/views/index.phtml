@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>All Todos</h1>
+    <form action="<?=$router->pathFor('create-todo')?>" method="post">
+        <input type="text" name="name" id="name" placeholder="New Todo List" />
+        <button type="Submit">Create</button>
+    </form>
+    <ul>
+        <?php foreach ($todos as $todo): ?>
+            <li>
+                <a href="<?=$router->pathFor('view-todo',['todoId'=>$todo->id()]) ?>"> <?=$todo->getName()?></a>
+            </li>
+        <?php endforeach ?>
+    </ul>
+</body>
+</html>
